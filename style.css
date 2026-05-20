@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+margin:0;
+background:#ffd5ea;
+font-family:'Press Start 2P', cursive;
+}
+
+.app{
+max-width:430px;
+margin:auto;
+padding:20px;
+min-height:100vh;
+background:linear-gradient(#ffe2f1,#fff);
+}
+
+h1,h2{
+text-align:center;
+color:#563b87;
+}
+
+.card{
+background:#fff8dc;
+border:5px solid #563b87;
+border-radius:30px;
+padding:20px;
+box-shadow:8px 8px 0 #563b87;
+}
+
+.xp{
+height:18px;
+background:#ddd;
+border-radius:20px;
+overflow:hidden;
+}
+
+.fill{
+height:100%;
+width:0%;
+background:#7effa1;
+transition:0.3s;
+}
+
+.stage{
+text-align:center;
+margin:15px 0;
+font-size:10px;
+}
+
+#pet{
+display:block;
+margin:auto;
+width:180px;
+image-rendering:pixelated;
+animation:float 2s infinite;
+}
+
+@keyframes float{
+50%{transform:translateY(-10px);}
+}
+
+.timer{
+text-align:center;
+font-size:24px;
+margin:20px 0;
+}
+
+.buttons{
+display:flex;
+gap:10px;
+}
+
+button{
+flex:1;
+padding:14px;
+border:none;
+border-radius:15px;
+background:#8fd8ff;
+font-family:inherit;
+font-size:9px;
+}
+
+.collection{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:15px;
+margin-top:20px;
+}
+
+.collection img{
+width:100%;
+background:white;
+border-radius:20px;
+padding:10px;
+border:4px solid #563b87;
+}
